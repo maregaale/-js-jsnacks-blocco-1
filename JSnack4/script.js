@@ -9,7 +9,7 @@ var nomeValido = false;
 
 // verifico se nome appartiene alla iusta invitati
 for (var i = 0; i < invitati.length; i++) {
-  if (nomeUtente == invitati[i]) {
+  if (nomeUtente.toLowerCase() == invitati[i].toLowerCase()) {
     nomeValido =  true;
   }
 }
