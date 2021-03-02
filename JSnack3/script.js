@@ -1,8 +1,13 @@
 // richiesta per 10 volte di inserire un numero
-var numeri = [parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero")), parseInt(prompt("inserisci un numero"))];
+var somma = 0;
 
-// stampa della somma
-var somma;
-for (var i = 0; i < numeri.length; i++) {
-  console.log(numeri[i] + numeri[i - 1]);
+for (var i = 1; i <= 10; i++) {
+  // richiesta numero all'utente
+  var numero = parseInt(prompt("inserisci un numero"));
+
+  // aggiunto numero a somma
+  somma = somma + numero;
 }
+
+// stampa somma
+console.log(somma);
