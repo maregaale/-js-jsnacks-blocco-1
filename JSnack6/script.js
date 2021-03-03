@@ -1,5 +1,7 @@
 // chiedo il numero n
-var numeroUtente = parseInt(prompt("inserisci un numero"));
+do {
+  var numeroUtente = parseInt(prompt("inserisci un numero"));
+} while (isNaN(numeroUtente));
 
 // spampa i primi n numeri al cubo
 for (var i = 1; i <= numeroUtente; i++) {
