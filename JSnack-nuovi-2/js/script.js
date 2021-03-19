@@ -39,8 +39,14 @@ console.log(squadre);
 var falliSquadre = [];
 
 for (var i = 0; i < squadre.length; i++) {
+
+  // creo oggetto squadra
   var squadra = {};
+
+  // pusho l'oggetto nel nuovo array
   falliSquadre.push(squadra);
+
+  // aggiungo le proprietà agli oggetti del nuovo array
   falliSquadre[i].nome = squadre[i].nome;
   falliSquadre[i].falliSubiti = squadre[i].falliSubiti;
 }
